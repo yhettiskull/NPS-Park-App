@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>NPS App</title>
+  </head>
+  <body>
+    <form>
+      <label for="state_search">Which State are you visiting?</label>
+      <input type="text" id="state_search">
+      </br>
+      <label for="max_results">Max Results</label>
+      <input type="text" id="max_results" value="10">
+      <input type="submit">
+    </form>
+    <section id="results_container">
+      <ul id="results_list"></ul>
+    </section>
+    <div id="error_container"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
