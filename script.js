@@ -31,7 +31,7 @@ function displayResults(responseJson) {
 function getParks(searchTerm, maxResults) {
     const params = {
         api_key: apiKey,
-        q: searchTerm,
+        stateCode: searchTerm,
         limit: maxResults
     };
 
@@ -56,7 +56,7 @@ function watchForm() {
   $('form').submit(event => {
     event.preventDefault();
 
-    let searchTerm = $('#state_search').val();
+    let searchTerm = $('#state_search').val().split(" ");
     let maxResults = $('#max_results').val();
 
     console.log(searchTerm);
